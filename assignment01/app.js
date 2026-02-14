@@ -17,7 +17,7 @@ const connectDB=require("./config/db");
 const graphqlHttp = graphqlHTTP({
   schema: gqlSchema,
   rootValue: rootResolver,
-  // graphiql: true,
+  graphiql: true,
 });
 
 
