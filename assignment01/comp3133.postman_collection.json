@@ -1,0 +1,902 @@
+{
+  "info": {
+    "_postman_id": "48ac1f6f-73a8-4d0f-8952-bdbce1f2c7ac",
+    "name": "comp3133",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48585866"
+  },
+  "item": [
+    {
+      "name": "assignments",
+      "item": [
+        {
+          "name": "assignment01",
+          "item": [
+            {
+              "name": "mutation",
+              "item": [
+                {
+                  "name": "signup",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\r\n    signup( input: {username: \"admin\"\r\n        email: \"admin@admin.com\"\r\n        password: \"12345\"}){\r\n            _id\r\n            username\r\n            email\r\n        }\r\n}",
+                        "variables": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/graphql",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "graphql"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "signup",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\r\n    signup( input: {username: \"admin\"\r\n        email: \"admin@admin.com\"\r\n        password: \"12345\"}){\r\n            _id\r\n            username\r\n            email\r\n        }\r\n}",
+                            "variables": ""
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/graphql",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "graphql"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "X-Powered-By",
+                          "value": "Express"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "99"
+                        },
+                        {
+                          "key": "ETag",
+                          "value": "W/\"63-kP7i9XJDRVxkn4E6egMvu0snH/s\""
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 14 Feb 2026 21:53:25 GMT"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=5"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"data\": {\n        \"signup\": {\n            \"_id\": \"6990eed5914d29a6877242e5\",\n            \"username\": \"admin\",\n            \"email\": \"admin@admin.com\"\n        }\n    }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "add employee",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\r\n    addNewEmployee(input: {\r\n        first_name: \"test_firstname\"\r\n        last_name: \"test_lastname\"\r\n        email: \"test@email.com\"\r\n        gender: \"Male\"\r\n        designation: \"test_designation\"\r\n        salary: 1000.05\r\n        date_of_joining: \"2026-01-10\"\r\n        department: \"test_department\"\r\n        employee_photo: \"https://cloudinary.com/test\"\r\n    }){\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n    }\r\n}",
+                        "variables": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/graphql",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "graphql"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "add employee",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\r\n    addNewEmployee(input: {\r\n        first_name: \"test_firstname\"\r\n        last_name: \"test_lastname\"\r\n        email: \"test@email.com\"\r\n        gender: \"Male\"\r\n        designation: \"test_designation\"\r\n        salary: 1000.05\r\n        date_of_joining: \"2026-01-10\"\r\n        department: \"test_department\"\r\n        employee_photo: \"https://cloudinary.com/test\"\r\n    }){\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n    }\r\n}",
+                            "variables": ""
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/graphql",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "graphql"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "X-Powered-By",
+                          "value": "Express"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "323"
+                        },
+                        {
+                          "key": "ETag",
+                          "value": "W/\"143-6EJW89n0CSi/FgfvOGzgn0fHhRo\""
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 14 Feb 2026 21:54:56 GMT"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=5"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"data\": {\n        \"addNewEmployee\": {\n            \"_id\": \"6990ef30914d29a6877242ea\",\n            \"first_name\": \"test_firstname\",\n            \"last_name\": \"test_lastname\",\n            \"email\": \"test@email.com\",\n            \"gender\": \"Male\",\n            \"designation\": \"test_designation\",\n            \"salary\": 1000.05,\n            \"date_of_joining\": \"1768003200000\",\n            \"department\": \"test_department\",\n            \"employee_photo\": \"https://cloudinary.com/test\"\n        }\n    }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "update employee",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\r\n    updateEmployeeById(_id: \"6990e98f5a5ab3607bf58800\",input: {\r\n        first_name: \"test_firstname_updated\"\r\n        last_name: \"test_lastname_updated\"\r\n        email: \"test@email.com\"\r\n        gender: \"Male\"\r\n        designation: \"test_designation\"\r\n        salary: 1000.05\r\n        date_of_joining: \"2026-01-10\"\r\n        department: \"test_department\"\r\n        employee_photo: \"https://cloudinary.com/test\"\r\n    }){\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n        created_at\r\n        updated_at\r\n    }\r\n}",
+                        "variables": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/graphql",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "graphql"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "update employee",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\r\n    updateEmployeeById(_id: \"6990ef30914d29a6877242ea\",input: {\r\n        first_name: \"test_firstname_updated\"\r\n        last_name: \"test_lastname_updated\"\r\n        email: \"test@email.com\"\r\n        gender: \"Male\"\r\n        designation: \"test_designation\"\r\n        salary: 1000.05\r\n        date_of_joining: \"2026-01-10\"\r\n        department: \"test_department\"\r\n        employee_photo: \"https://cloudinary.com/test\"\r\n    }){\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n        created_at\r\n        updated_at\r\n    }\r\n}",
+                            "variables": ""
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/graphql",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "graphql"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "X-Powered-By",
+                          "value": "Express"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "401"
+                        },
+                        {
+                          "key": "ETag",
+                          "value": "W/\"191-R/iPv3PBi8FUVawLfAKg9mSoDHU\""
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 14 Feb 2026 21:57:18 GMT"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=5"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"data\": {\n        \"updateEmployeeById\": {\n            \"_id\": \"6990ef30914d29a6877242ea\",\n            \"first_name\": \"test_firstname_updated\",\n            \"last_name\": \"test_lastname_updated\",\n            \"email\": \"test@email.com\",\n            \"gender\": \"Male\",\n            \"designation\": \"test_designation\",\n            \"salary\": 1000.05,\n            \"date_of_joining\": \"1768003200000\",\n            \"department\": \"test_department\",\n            \"employee_photo\": \"https://cloudinary.com/test\",\n            \"created_at\": \"1771106096425\",\n            \"updated_at\": \"1771106238344\"\n        }\n    }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "delete employee by id",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "mutation {\r\n    deleteEmployeeById(_id:\"6990e98f5a5ab3607bf58800\")\r\n}",
+                        "variables": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/graphql",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "graphql"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "delete employee by id",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "mutation {\r\n    deleteEmployeeById(_id:\"6990ef30914d29a6877242ea\")\r\n}",
+                            "variables": ""
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/graphql",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "graphql"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "X-Powered-By",
+                          "value": "Express"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "36"
+                        },
+                        {
+                          "key": "ETag",
+                          "value": "W/\"24-sUfW45tDWa50GJscjO7hIEOklQE\""
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 14 Feb 2026 21:59:03 GMT"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=5"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"data\": {\n        \"deleteEmployeeById\": true\n    }\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "query",
+              "item": [
+                {
+                  "name": "login",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "\r\nquery{\r\n      login(input: {\r\n        username: \"admin\"\r\n        email: \"admin@admin.com\"\r\n        password: \"12345\"\r\n        }){\r\n            _id\r\n            username\r\n            email\r\n\r\n  }\r\n}",
+                        "variables": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/graphql",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "graphql"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "login",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "\r\nquery{\r\n      login(input: {\r\n        username: \"admin\"\r\n        email: \"admin@admin.com\"\r\n        password: \"12345\"\r\n        }){\r\n            _id\r\n            username\r\n            email\r\n\r\n  }\r\n}",
+                            "variables": ""
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/graphql",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "graphql"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "X-Powered-By",
+                          "value": "Express"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "98"
+                        },
+                        {
+                          "key": "ETag",
+                          "value": "W/\"62-v9keYtx+ayysUYk+dARzFHdjBVs\""
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 14 Feb 2026 21:54:10 GMT"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=5"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"data\": {\n        \"login\": {\n            \"_id\": \"6990eed5914d29a6877242e5\",\n            \"username\": \"admin\",\n            \"email\": \"admin@admin.com\"\n        }\n    }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "get all employees",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "\r\nquery{\r\n    getAllEmployees{\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n        created_at\r\n        updated_at\r\n    }\r\n\r\n}",
+                        "variables": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/graphql",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "graphql"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "get all employees",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "\r\nquery{\r\n    getAllEmployees{\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n        created_at\r\n        updated_at\r\n    }\r\n\r\n}",
+                            "variables": ""
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/graphql",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "graphql"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "X-Powered-By",
+                          "value": "Express"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "384"
+                        },
+                        {
+                          "key": "ETag",
+                          "value": "W/\"180-2GF4vRuzgL84fMUKQ1bvVA93DRg\""
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 14 Feb 2026 21:55:45 GMT"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=5"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"data\": {\n        \"getAllEmployees\": [\n            {\n                \"_id\": \"6990ef30914d29a6877242ea\",\n                \"first_name\": \"test_firstname\",\n                \"last_name\": \"test_lastname\",\n                \"email\": \"test@email.com\",\n                \"gender\": \"Male\",\n                \"designation\": \"test_designation\",\n                \"salary\": 1000.05,\n                \"date_of_joining\": \"1768003200000\",\n                \"department\": \"test_department\",\n                \"employee_photo\": \"https://cloudinary.com/test\",\n                \"created_at\": \"1771106096425\",\n                \"updated_at\": \"1771106096425\"\n            }\n        ]\n    }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "get employee by Id",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "\r\nquery{\r\n    searchEmployeeById(_id: \"6990e98f5a5ab3607bf58800\"){\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n        created_at\r\n        updated_at\r\n    }\r\n}",
+                        "variables": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/graphql",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "graphql"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "get employee by Id",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "\r\nquery{\r\n    searchEmployeeById(_id: \"6990ef30914d29a6877242ea\"){\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n        created_at\r\n        updated_at\r\n    }\r\n}",
+                            "variables": ""
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/graphql",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "graphql"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "X-Powered-By",
+                          "value": "Express"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "385"
+                        },
+                        {
+                          "key": "ETag",
+                          "value": "W/\"181-Vfs9rMI9Wsy3he1RCxgvFu1HFx8\""
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 14 Feb 2026 21:56:33 GMT"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=5"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"data\": {\n        \"searchEmployeeById\": {\n            \"_id\": \"6990ef30914d29a6877242ea\",\n            \"first_name\": \"test_firstname\",\n            \"last_name\": \"test_lastname\",\n            \"email\": \"test@email.com\",\n            \"gender\": \"Male\",\n            \"designation\": \"test_designation\",\n            \"salary\": 1000.05,\n            \"date_of_joining\": \"1768003200000\",\n            \"department\": \"test_department\",\n            \"employee_photo\": \"https://cloudinary.com/test\",\n            \"created_at\": \"1771106096425\",\n            \"updated_at\": \"1771106096425\"\n        }\n    }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "search by keyword",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "graphql",
+                      "graphql": {
+                        "query": "\r\nquery{\r\n    searchEmployeeByDesignationOrDepartment(keyword: \"de\"){\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n        created_at\r\n        updated_at\r\n    }\r\n}",
+                        "variables": ""
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:3000/graphql",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "3000",
+                      "path": [
+                        "graphql"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "search by keyword",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "graphql",
+                          "graphql": {
+                            "query": "\r\nquery{\r\n    searchEmployeeByDesignationOrDepartment(keyword: \"de\"){\r\n        _id\r\n        first_name\r\n        last_name\r\n        email\r\n        gender\r\n        designation\r\n        salary\r\n        date_of_joining\r\n        department\r\n        employee_photo\r\n        created_at\r\n        updated_at\r\n    }\r\n}",
+                            "variables": ""
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:3000/graphql",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "3000",
+                          "path": [
+                            "graphql"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "X-Powered-By",
+                          "value": "Express"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "424"
+                        },
+                        {
+                          "key": "ETag",
+                          "value": "W/\"1a8-YqLSNlxkRoaGwTo7H5EpWRxSzzM\""
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 14 Feb 2026 21:57:45 GMT"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=5"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"data\": {\n        \"searchEmployeeByDesignationOrDepartment\": [\n            {\n                \"_id\": \"6990ef30914d29a6877242ea\",\n                \"first_name\": \"test_firstname_updated\",\n                \"last_name\": \"test_lastname_updated\",\n                \"email\": \"test@email.com\",\n                \"gender\": \"Male\",\n                \"designation\": \"test_designation\",\n                \"salary\": 1000.05,\n                \"date_of_joining\": \"1768003200000\",\n                \"department\": \"test_department\",\n                \"employee_photo\": \"https://cloudinary.com/test\",\n                \"created_at\": \"1771106096425\",\n                \"updated_at\": \"1771106238344\"\n            }\n        ]\n    }\n}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "labs",
+      "item": [
+        {
+          "name": "lab04",
+          "item": [
+            {
+              "name": "post",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "    {\r\n        \"cuisines\": \"delicatessen\",\r\n        \"name\": \"Fine Deli\",\r\n        \"city\": \"bronx\",\r\n        \"restaurant_id\": 104\r\n    }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/restaurant",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "restaurant"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "fetchAll",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/restaurants",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "restaurants"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "fetchAllByCuisine",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/restaurants/cuisine/Italian",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "restaurants",
+                    "cuisine",
+                    "Italian"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "fetchAllSortedBy",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/restaurants/restaurant_id?sortBy=DESC",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "restaurants",
+                    "restaurant_id"
+                  ],
+                  "query": [
+                    {
+                      "key": "sortBy",
+                      "value": "DESC"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "fetchAllByCuisineExludingCity",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:3000/restaurants/Delicatessen",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "restaurants",
+                    "Delicatessen"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "lab04_submission",
+          "item": [
+            {
+              "name": "/users",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8081/users",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8081",
+                  "path": [
+                    "users"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "insert",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Er\",\r\n    \"username\": \"Antonette\",\r\n    \"email\": \"Shanna$$melissa.tv\",\r\n    \"address\": {\r\n      \"street\": \"Victor Plains\",\r\n      \"suite\": \"Suite 879\",\r\n      \"city\": \"Wisokyburgh123\",\r\n      \"zipcode\": \"905667771\",\r\n      \"geo\": {\r\n        \"lat\": \"-43.9509\",\r\n        \"lng\": \"-34.4618\"\r\n      }\r\n    },\r\n    \"phone\": \"1-901-692-6593??\",\r\n    \"website\": \"ht://anastasia.net\",\r\n    \"company\": {\r\n      \"name\": \"Deckow-Crist\",\r\n      \"catchPhrase\": \"Proactive didactic contingency\",\r\n      \"bs\": \"synergize scalable supply-chains\"\r\n    }\r\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8081/insert",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8081",
+                  "path": [
+                    "insert"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
