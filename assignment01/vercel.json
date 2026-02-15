@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/graphql",
+      "dest": "/api/graphql.js"
+    }
+  ]
+}
